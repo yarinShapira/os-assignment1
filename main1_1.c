@@ -2,4 +2,5 @@
 
 int main(){
     helloAriel();
+    return 0;
 }
