@@ -1,10 +1,10 @@
 all:main1_1.out main1_2.out main1_3.out
 
-main2_1.out: main2_1.o
-	gcc -Wall -o main2_1.o
+main2_2.out: main2_2.c
+	gcc -Wall -o main2_2.out main2_2.c
 
-main2_1.o: mian2_1.c
-	gcc -Wall -c mian2_1.c
+main2_1.out: main2_1.c
+	gcc -Wall -o main2_1.out main2_1.c
 
 main1_3.out: main1_3.c libhello_Ariel.so
 	gcc main1_3.c -fPIC -ldl -o main1_3.out
