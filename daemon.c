@@ -12,7 +12,7 @@ int main(){
 
             chdir("/");
             setsid();
-            close(stout);
+            close(stdout);
             close(stdin);
             close(stderr);
 
