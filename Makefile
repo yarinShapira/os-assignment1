@@ -1,4 +1,4 @@
-all:main1_1.out main1_2.out main1_3.out
+out:main1_1.out main1_2.out main1_3.out
 
 daemon.o: daemon.c
 	gcc -Wall -o daemon.o daemon.c
@@ -27,7 +27,7 @@ hello_Ariel.o: hello_Ariel.c hello_Ariel.h
 libhello_Ariel.so: hello_Ariel.h hello_Ariel.c
 	gcc -o libhello_Ariel.so -shared -fPIC hello_Ariel.c
 
-.PHONY: clean all
+.PHONY: clean out
 
 clean:
 	rm -f *.o *.out *.so
