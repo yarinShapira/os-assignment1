@@ -1,3 +1,0 @@
-bash-+-main2_4.out-+-main2_4.out---main2_4.out
-     |             `-main2_4.out
-     `-2*[main2_4.out]
